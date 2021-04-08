@@ -11,32 +11,97 @@
 }
 
 
-
 /* esercizio 2 */
+#click{
+    display: none;
+}
+
 .ex-2-square {
     width: 100px;
     height: 100px;
     background: red;
+    pointer-events: none;
+    transition: all 3s ease-in;
 }
+
+#click:checked ~ label .ex-2-square{
+   width: 600px;
+    pointer-events: auto;
+}
+
+/* esercizio 3 */
 .ex-3-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: all 3s ;
 }
+
+.ex-3-square:hover{
+    border-radius: 50%;
+}
+
+/* esercizio 4 */
 .ex-4-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: all 3s ;
+
+}
+.ex-4-square:hover {
+    opacity: 0;
+}
+
+
+/* esercizio 5 */
+#clack{
+    display: none;
 }
 .ex-5-square {
     margin: 20px;
     width: 60px;
     height: 60px;
     background: red;
+    pointer-events: none;
+    transition: all 3s ease-in-out;
 }
+
+label{
+    transition: all 3s ease-in-out;
+}
+label:hover {
+    width: 100px;
+    height: 100px;
+}
+
+#clack:checked ~ label .ex-5-square{
+    width: 30px;
+    height: 30px;
+    pointer-events: auto;
+    transform: rotate(180deg);
+}
+
+
+
+/* IMMAGINI EX 6-7-8 */
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
+
+/* esercizio 6 */
+.ex-6-img:hover{
+    filter: grayscale(1);
+}
+
+/* esercizio 7 */
+.ex-7-img{
+    transition: all 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) ;
+}
+.ex-7-img:hover{
+    filter: sepia();
+}
+
 
 .ex-9-img {
     margin: 50px 100px;
