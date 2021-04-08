@@ -55,32 +55,22 @@
 
 
 /* esercizio 5 */
-#clack{
-    display: none;
-}
 .ex-5-square {
     margin: 20px;
     width: 60px;
     height: 60px;
     background: red;
-    pointer-events: none;
     transition: all 3s ease-in-out;
 }
-
-label{
-    transition: all 3s ease-in-out;
-}
-label:hover {
+.ex-5-square:hover{
     width: 100px;
     height: 100px;
 }
-
-#clack:checked ~ label .ex-5-square{
+.ex-5-square:active{
     width: 30px;
     height: 30px;
-    pointer-events: auto;
-    transform: rotate(180deg);
 }
+
 
 
 
